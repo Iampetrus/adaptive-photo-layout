@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: -2.5px;
+}
+
+.container:after {
+  content: '';
+  flex-grow: 999999999;
+  min-width: 300px;
+  height: 0;
+}
+
+.container>* {
+  position: relative;
+  display: block;
+  height: 300px;
+  margin: 2.5px;
+  flex-grow: 1;
+}
+
+.container>*>img {
+  height: 300px;
+  object-fit: cover;
+  max-width: 100%;
+  min-width: 100%;
+  vertical-align: bottom;
+}
+
+.container.margin {
+  margin: 2.5px;
+}
+
+@media (max-width: 980px) {
+  .container {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: -2.5px;
+  }
+
+  .container:after {
+    content: '';
+    flex-grow: 999999999;
+    min-width: 150px;
+    height: 0;
+  }
+
+  .container>* {
+    position: relative;
+    display: block;
+    height: 150px;
+    margin: 2.5px;
+    flex-grow: 1;
+  }
+
+  .container>*>img {
+    height: 150px;
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: bottom;
+  }
+
+  .container.margin {
+    margin: 2.5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: -2.5px;
+  }
+
+  .container:after {
+    content: '';
+    flex-grow: 999999999;
+    min-width: 100px;
+    height: 0;
+  }
+
+  .container>* {
+    position: relative;
+    display: block;
+    height: 100px;
+    margin: 2.5px;
+    flex-grow: 1;
+  }
+
+  .container>*>img {
+    height: 100px;
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: bottom;
+  }
+
+  .container.margin {
+    margin: 2.5px;
+  }
+}
